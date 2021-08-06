@@ -1,0 +1,72 @@
+/*Zerando o Documento*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Estilizando o Nav*/
+nav{
+    width: 100%; /*largura*/
+    position: fixed ; /*Fixando a posição do nav no topo*/
+    background: linear-gradient(rgba(0,0,0,0.7), transparent);
+    /*Estamos dando cor ao fundo do nav, unsando linear-gradient para dar o efeito de degradê e o transparent para fazer ir do preto ao transparente*/
+    text-align: center; /*centralizando o texto do nav*/
+}
+nav ul li {
+    display: inline-block; /*Estamos dizendo para o texto ficar na mesma linha*/
+}
+nav ul li a {
+    text-decoration: none; /*Estamos tirando a decoração dos link isso inclui o sublinhado "azul"*/
+    padding: 5px 0; /*5px de cima pra baixo (↕)----- e 0 da direita a esquerda (↔) */
+    display: inline-block;
+    margin: 15px 10px; /*estamos colocando o espaço/margem de 15px de cima pra baixo (↕)--
+    -- e 10 da direita a esquerda (↔) */
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: all 0.25s ease-in-out;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid white;
+}
+
+section{
+    width: 100%; /*largura de 100%*/
+    min-height: 100vh; /*Estamos informando que nosso section a 
+    'MINIMA' altura , que no caso é pra ocupar toda a altura da nossa tela.*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+section h1 {
+    font-size: 70px;
+    color: white;
+}
+
+section:nth-of-type(1){
+    background-image: url("../img/sec1.jpg");
+
+}
+section:nth-of-type(2){
+    background-image: url("../img/sec2.jpg");
+
+}
+section:nth-of-type(3){
+    background-image: url("../img/sec3.jpg");
+
+}
+section:nth-of-type(4){
+    background-image: url("../img/sec4.jpg");
+
+}
